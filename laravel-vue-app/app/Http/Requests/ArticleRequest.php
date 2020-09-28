@@ -13,7 +13,7 @@ class ArticleRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,7 +25,7 @@ class ArticleRequest extends FormRequest
     {
         return [
             'title' => 'required|max:50',
-            'body' => 'required|max:500'
+            'body' => 'required|max:500',
             //
         ];
     }
@@ -34,6 +34,6 @@ class ArticleRequest extends FormRequest
         return [
             'title' => 'タイトル',
             'body' => '本文',
-        ]
+        ];
     }
 }
