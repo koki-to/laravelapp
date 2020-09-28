@@ -1,7 +1,7 @@
 @csrf
 <div class="md-form">
   <label>タイトル</label>
-  <input type="text" class="form-control" required value="{{ old('title')}}">
+  <input type="text" name="title" class="form-control" required value="{{ old('title')}}">
 </div>
 <div class="form-group">
   <label></label>
