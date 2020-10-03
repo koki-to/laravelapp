@@ -63,4 +63,10 @@
       {{ $article->body }}
     </div>
   </div>
+  <div class="card-body pt-0 pd-2 pl-3">
+    <div class="card-text">
+      <article-like>
+      </article-like>
+    </div>
+  </div>
 </div>
